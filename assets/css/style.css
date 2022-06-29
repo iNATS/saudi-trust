@@ -1,0 +1,9 @@
+* {
+    font-family: 'Almarai', sans-serif;
+    src: url('../fonts/Almarai/Almarai-Regular.ttf');
+}
+
+.logo {
+    max-width: 10%;
+
+}
