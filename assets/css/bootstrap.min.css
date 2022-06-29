@@ -4120,7 +4120,7 @@ fieldset:disabled .btn {
     --bs-nav-link-padding-y: 0.5rem;
     --bs-nav-link-font-weight: ;
     --bs-nav-link-color: var(--bs-link-color);
-    --bs-nav-link-hover-color: var(--bs-link-hover-color);
+    --bs-nav-link-hover-color: var(--bs-primary);
     --bs-nav-link-disabled-color: #6c757d;
     display: flex;
     flex-wrap: wrap;
@@ -4147,7 +4147,9 @@ fieldset:disabled .btn {
 
 .nav-link:focus,
 .nav-link:hover {
-    color: var(--bs-nav-link-hover-color)
+    color: var(--bs-primary);
+    border: 1px solid ;
+    border-color: var(--bs-primary);
 }
 
 .nav-link.disabled {
