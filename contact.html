@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Saudi trust</title>
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/bootstrap-icons-1.8.3/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- script -->
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <include src="layout/header.html"></include>
+    <div class="container-fluid px-0">
+        <div class="row mx-0">
+            <div class="col-md-4 align-self-center p-5">
+                <h1><strong>Lorem</strong> ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                <!-- contact form -->
+                <form class="g-3 needs-validation" novalidate>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" required name="inputName" id="inputName"
+                            placeholder="Name">
+                        <label for="inputName">Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="tel" class="form-control" required name="phone" id="inputPhone"
+                            placeholder="Phone">
+                        <label class="" for="inputPhone">Phone</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" required id="floatingInputEmail"
+                            placeholder="name@example.com">
+                        <label for="floatingInputEmail">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea rows="4" cols="50" class="form-control" required name="subject" id="subject" rows="3"
+                            placeholder="Subject"></textarea>
+                        <label for="Subject">Subject</label>
+                    </div>
+                    <div class="d-grid gap-2 mt-4">
+                        <button class="btn btn-primary" type="submit"> <i class="bi bi-send"></i> &nbsp; submit
+                        </button>
+                    </div>
+                </form>
+                <!-- end form -->
+                <div class="align-item-center mt-5">follow us  </div>
+
+            </div>
+            <div class="col-md-8 px-0">
+                <!-- google map -->
+                <div class="iframe-maps">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7420885.653129823!2d42.82362128003309!3d24.74474967802781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1656928312459!5m2!1sen!2sus"
+                        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- end map -->
+            </div>
+        </div>
+    </div>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+
+</html>

@@ -1,3 +1,4 @@
+@import url(bootstrap.min.css);
 /* Almarai regular */
 
 @font-face {
@@ -153,11 +154,53 @@
     z-index: 7;
 }
 
-
-
 .info-container {
     transform: translateZ(0) scale(1);
     z-index: 8;
     display: flex;
     flex-direction: column;
+}
+
+.nav-effect::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #e6b447;
+    transition: width .3s;
+}
+
+.nav-effect:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.active::after{
+    content: '';
+    display: block;
+    height: 2px;
+    background: #e6b447;
+}
+
+.active::after {
+    width: 100%;
+}
+
+
+/* google map */
+.iframe-maps iframe {
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: calc( 100vh - 65px ) !important;
+}
+
+.form-control{
+    border: none;
+    border-bottom:1px solid #dcdfe6;
+}
+
+.form-control:focus{
+    border-bottom:2px solid #e6b447;
+    color: #e6b447;
 }
