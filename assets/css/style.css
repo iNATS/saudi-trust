@@ -62,15 +62,6 @@
     perspective: 300px;
 }
 
-.hero-text {
-    background: linear-gradient (rgba(105, 211, 252, 0.25) 0%,
-            rgba(255, 116, 161, 0.25) 86%,
-            rgba(1, 0, 0, 0.25) 100%);
-    background-size: cover;
-    transform: translateZ(0) scale(1);
-    z-index: 7;
-}
-
 .para-container {
     position: absolute;
     left: 50%;
@@ -104,44 +95,23 @@
 }
 
 .sky {
-    background: url('../img/sky.png') no-repeat center;
+    background: url('../img/parallax/sky.png') no-repeat center;
     background-size: cover;
     transform: translateZ(-600px) scale(3);
     z-index: 1;
 }
 
-.bushes {
-    background: url('../img/bushes.png') no-repeat center;
-    background-size: cover;
-    transform: translateZ(-525px) scale(2.75);
-    z-index: 2;
-}
-
-.water {
-    background: url('../img/water.png') no-repeat center;
-    background-size: cover;
-    transform: translateZ(-400px) scale(2.33333333);
-    z-index: 3;
-}
-
-.people1 {
-    background: url('../img/people1.png') no-repeat center;
-    background-size: cover;
-    transform: translateZ(-250px) scale(1.833333333);
-    z-index: 4;
-}
-
-.people2 {
-    background: url('../img/people2.png') no-repeat center;
+.city {
+    background: url('../img/parallax/city.png') no-repeat center;
     background-size: cover;
     transform: translateZ(-125px) scale(1.4167);
     z-index: 5;
 }
 
-.people3 {
-    background: url('../img/people3.png') no-repeat center;
+.tower2 {
+    background: url('../img/parallax/tower2.png') no-repeat center;
     background-size: cover;
-    transform: translateZ(0) scale(1);
+    transform: translateZ(0px) scale(1);
     z-index: 6;
 }
 
@@ -175,7 +145,7 @@
     transition: width .3s;
 }
 
-.active::after{
+.active::after {
     content: '';
     display: block;
     height: 2px;
@@ -192,15 +162,88 @@
     top: 0;
     left: 0;
     width: 100% !important;
-    height: calc( 100vh - 65px ) !important;
+    height: calc(100vh - 65px) !important;
 }
 
-.form-control{
+.form-control {
     border: none;
-    border-bottom:1px solid #dcdfe6;
+    border-bottom: 1px solid #dcdfe6;
 }
 
-.form-control:focus{
-    border-bottom:2px solid #e6b447;
+.form-control:focus {
+    border-bottom: 2px solid #e6b447;
     color: #e6b447;
+}
+
+/* social links */
+
+.link-social {
+    color: #c79326;
+    transition: color .3s;
+    font-size: x-large;
+}
+
+.link-social:hover {
+    color: #e6b447;
+    cursor: pointer;
+}
+
+/* hr text */
+.hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+}
+
+.hr-text:before {
+    content: '';
+    background: linear-gradient(to right, transparent, #e6b447, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+}
+
+.hr-text:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+
+    padding: 0 .5em;
+    line-height: 1.5em;
+    color: #e6b447;
+    background-color: #fcfcfa;
+}
+
+.footer-bg {
+    background-image: url('../img/footer.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.footer-bg .bg-liner {
+    background: linear-gradient(to top, transparent, #00000073);
+    height: 100%;
+}
+
+.card .card-bg-liner{
+    display: none;
+    transition:display .3s;
+   
+}
+
+.card .card-bg-liner:hover{
+    background: linear-gradient(to bottom, transparent, #00000073);
+    height: 100%;
+    transition:display .3s;
 }

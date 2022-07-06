@@ -20,9 +20,13 @@
     <!-- header -->
     <include src="layout/header.html"></include>
     <div class="container-fluid px-0">
+        <!-- start row -->
         <div class="row mx-0">
             <div class="col-md-4 align-self-center p-5">
-                <h1><strong>Lorem</strong> ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                <div class="row mb-5">
+                    <p class="display-5">Get in touch </p>
+                    <p class="h4">We'll be in touch with you.</p>
+                </div>
                 <!-- contact form -->
                 <form class="g-3 needs-validation" novalidate>
                     <div class="form-floating mb-3">
@@ -41,19 +45,36 @@
                         <label for="floatingInputEmail">Email address</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <textarea rows="4" cols="50" class="form-control" required name="subject" id="subject" rows="3"
-                            placeholder="Subject"></textarea>
+                        <textarea class="form-control" required name="subject" id="subject" placeholder="Subject"
+                            style="height: 100px;"></textarea>
                         <label for="Subject">Subject</label>
                     </div>
-                    <div class="d-grid gap-2 mt-4">
+                    <div class="d-grid gap-2 mt-5">
                         <button class="btn btn-primary" type="submit"> <i class="bi bi-send"></i> &nbsp; submit
                         </button>
                     </div>
                 </form>
                 <!-- end form -->
-                <div class="align-item-center mt-5">follow us  </div>
 
+                <!-- social media linkes -->
+                <div class="row mt-5 pt-5">
+                    <hr class="hr-text" data-content="Follow us now">
+                </div>
+                <div class="d-flex flex-row justify-content-between mt-2">
+                    <span><i class="bi bi-facebook m-2 link-social "></i></span>
+                    <div class="vr text-primary"></div>
+                    <span><i class="bi bi-twitter m-2 link-social"></i></span>
+                    <div class="vr text-primary"></div>
+                    <span><i class="bi bi-linkedin m-2 link-social"></i></span>
+                    <div class="vr text-primary"></div>
+                    <span><i class="bi bi-whatsapp m-2 link-social"></i></span>
+                </div>
+
+                <!-- end social -->
             </div>
+            <!-- end left side -->
+
+            <!-- start right side -->
             <div class="col-md-8 px-0">
                 <!-- google map -->
                 <div class="iframe-maps">
@@ -64,8 +85,11 @@
                 </div>
                 <!-- end map -->
             </div>
+            <!-- end right side -->
         </div>
+        <!-- end row -->
     </div>
+
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
         (() => {
@@ -87,6 +111,8 @@
             })
         })()
     </script>
+
+
 </body>
 
 </html>
